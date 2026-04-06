@@ -1,0 +1,22 @@
+{
+  "name": "@ecsimsw/mdviewer",
+  "version": "1.0.1",
+  "description": "Markdown to styled HTML viewer. Opens in browser with zoom controls and PDF export.",
+  "type": "module",
+  "bin": {
+    "mdviewer": "./cli.mjs"
+  },
+  "files": [
+    "cli.mjs"
+  ],
+  "dependencies": {
+    "marked": "^17.0.0"
+  },
+  "keywords": ["markdown", "viewer", "preview", "pdf"],
+  "author": "ecsimsw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecsimsw/mdviewer"
+  }
+}
