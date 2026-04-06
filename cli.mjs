@@ -218,6 +218,13 @@ function convert(inputPath, outDir) {
 
   openBrowser(htmlPath);
   console.log(htmlPath);
+
+  // 임시 파일이면 브라우저 로딩 후 삭제
+  if (outDir.startsWith(os.tmpdir())) {
+    setTimeout(() => {
+      fs.rmSync(outDir, { recursive: true, force: true });
+    }, 60000);
+  }
 }
 
 // --- CLI ---
@@ -235,7 +242,8 @@ if (args.length === 0 || args.includes("--help") || args.includes("-h")) {
     mdviewer ./docs
     mdviewer README.md --out ./export
 
-  Output: opens in browser. Default output dir: .mdviewer/ next to the file.
+  Output: opens in browser. HTML is saved to a temp directory by default.
+  Use --out to specify a custom output directory.
   PDF: use the PDF button in the browser toolbar.
 `);
   process.exit(0);
@@ -244,6 +252,7 @@ if (args.length === 0 || args.includes("--help") || args.includes("-h")) {
 const target = path.resolve(args[0]);
 const outIdx = args.indexOf("--out");
 const outDirArg = outIdx !== -1 ? path.resolve(args[outIdx + 1]) : null;
+const defaultOut = () => outDirArg || fs.mkdtempSync(path.join(os.tmpdir(), "mdviewer-"));
 
 if (fs.statSync(target).isDirectory()) {
   const files = fs.readdirSync(target).filter((f) => f.endsWith(".md"));
@@ -251,11 +260,11 @@ if (fs.statSync(target).isDirectory()) {
     console.log("No .md files found.");
     process.exit(0);
   }
-  const outDir = outDirArg || path.join(target, ".mdviewer");
+  const outDir = defaultOut();
   for (const f of files) {
     convert(path.join(target, f), outDir);
   }
 } else {
-  const outDir = outDirArg || path.join(path.dirname(target), ".mdviewer");
+  const outDir = defaultOut();
   convert(target, outDir);
 }
