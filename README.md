@@ -1,17 +1,31 @@
 # mdviewer
 
-Minimal Markdown viewer. Converts `.md` files to clean, styled HTML and opens them in your browser.
-
-By [@ecsimsw](https://github.com/ecsimsw) | [Blog](https://ecsimsw.tistory.com/)
+Minimal Markdown viewer. Converts `.md` files to styled HTML and opens them in your browser.
 
 ![screenshot](img/img.png)
 
 ## Features
 
-- Clean typography with [Pretendard](https://github.com/orioncactus/pretendard) font
+- 9 themes — Light, Dark, Space, Spring, Nugget, Forest, Sky, Wine, Lemon
 - Zoom controls (50%–200%)
-- PDF export via browser print
-- Works on macOS, Linux, and Windows
+- Width / Margin adjustment
+- Search & Replace
+- Edit mode (inline content editing)
+- Code block copy button
+- Table of Contents sidebar (auto-detected from headings)
+- PDF / TXT download
+- Relative image path support (`file://` conversion)
+- Temp file auto-cleanup
+
+## Stack
+
+- **Node.js** >= 18
+- **[marked](https://github.com/markedjs/marked)** — Markdown to HTML parser
+- **[Pretendard](https://github.com/orioncactus/pretendard)** — Web font (CDN)
+- **AppleScript + osacompile** — macOS `.app` bundle
+- **Homebrew Cask** — macOS distribution
+
+Single file CLI (`cli.mjs`), no build step, no framework.
 
 ## Install
 
@@ -35,7 +49,7 @@ npx @ecsimsw/mdviewer README.md
 
 ## How it works
 
-Converts Markdown to a styled HTML file in a temporary directory and opens it in your browser. The temp file is automatically deleted after 1 minute — do not refresh the page after that.
+Converts Markdown to a styled HTML file in a temp directory and opens it in your browser. Old temp files are automatically cleaned up on next launch.
 
 Use `--out` to save the HTML file permanently.
 
