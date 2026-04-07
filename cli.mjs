@@ -185,6 +185,90 @@ const CSS = `
   body.space .copy-btn:hover { background: rgba(255,255,255,0.12); }
   body.space mark.highlight { background: #2a4a2e; }
 
+  /* Spring theme */
+  body.spring { background: #fdf2f4; color: #5c3d4a; }
+  body.spring h1, body.spring h2, body.spring h3 { color: #8b3a62; border-color: #f0d4de; }
+  body.spring h4 { color: #a06b82; }
+  body.spring p, body.spring li { color: #5c3d4a; }
+  body.spring strong { color: #6b2248; }
+  body.spring hr { border-color: #f0d4de; }
+  body.spring code { background: #f9e4ea; color: #7a3d5c; }
+  body.spring pre { background: #f9e4ea; border-color: #f0d4de; }
+  body.spring pre code { color: #5c3d4a; }
+  body.spring blockquote { border-color: #e8b4c8; color: #a06b82; }
+  body.spring table { color: #5c3d4a; }
+  body.spring th, body.spring td { border-color: #f0d4de; }
+  body.spring th { background: #f9e4ea; }
+  body.spring tr:nth-child(even) td { background: #fdf2f4; }
+  body.spring .toc a:hover { color: #8b3a62; }
+  body.spring .toc a.active { color: #6b2248; }
+  body.spring .toolbar { background: rgba(253,242,244,0.85); box-shadow: 0 1px 4px rgba(139,58,98,0.08), 0 0 0 0.5px rgba(139,58,98,0.06); }
+  body.spring .toolbar button { color: #b08898; }
+  body.spring .toolbar button:hover { background: rgba(139,58,98,0.06); }
+  body.spring .toolbar .divider { background: rgba(139,58,98,0.08); }
+  body.spring .toolbar .search-input { background: rgba(255,255,255,0.5); border-color: #f0d4de; color: #5c3d4a; }
+  body.spring .copy-btn { background: rgba(139,58,98,0.06); color: #b08898; }
+  body.spring .copy-btn:hover { background: rgba(139,58,98,0.1); }
+  body.spring mark.highlight { background: #f5c6d8; }
+  body.spring .toolbar button.active-theme { background: rgba(139,58,98,0.1); color: #8b3a62; }
+  body.spring .replace-row .replace-btn { border-color: #f0d4de; color: #b08898; }
+
+  /* Nugget theme */
+  body.nugget { background: #f5f0e8; color: #3d3226; }
+  body.nugget h1, body.nugget h2, body.nugget h3 { color: #5c4a3a; border-color: #e0d5c4; }
+  body.nugget h4 { color: #8a7560; }
+  body.nugget p, body.nugget li { color: #4a3d30; }
+  body.nugget strong { color: #33261a; }
+  body.nugget hr { border-color: #e0d5c4; }
+  body.nugget code { background: #ebe4d8; color: #5c4a3a; }
+  body.nugget pre { background: #ebe4d8; border-color: #d9cfbe; }
+  body.nugget pre code { color: #4a3d30; }
+  body.nugget blockquote { border-color: #c9b99a; color: #8a7560; }
+  body.nugget table { color: #4a3d30; }
+  body.nugget th, body.nugget td { border-color: #e0d5c4; }
+  body.nugget th { background: #ebe4d8; }
+  body.nugget tr:nth-child(even) td { background: #f5f0e8; }
+  body.nugget .toc a:hover { color: #5c4a3a; }
+  body.nugget .toc a.active { color: #33261a; }
+  body.nugget .toolbar { background: rgba(245,240,232,0.85); box-shadow: 0 1px 4px rgba(61,50,38,0.08), 0 0 0 0.5px rgba(61,50,38,0.06); }
+  body.nugget .toolbar button { color: #a08e78; }
+  body.nugget .toolbar button:hover { background: rgba(61,50,38,0.06); }
+  body.nugget .toolbar .divider { background: rgba(61,50,38,0.08); }
+  body.nugget .toolbar .search-input { background: rgba(255,255,255,0.5); border-color: #e0d5c4; color: #3d3226; }
+  body.nugget .copy-btn { background: rgba(61,50,38,0.06); color: #a08e78; }
+  body.nugget .copy-btn:hover { background: rgba(61,50,38,0.1); }
+  body.nugget mark.highlight { background: #e0cc9a; }
+  body.nugget .toolbar button.active-theme { background: rgba(61,50,38,0.1); color: #5c4a3a; }
+  body.nugget .replace-row .replace-btn { border-color: #e0d5c4; color: #a08e78; }
+
+  /* Forest theme */
+  body.forest { background: #f0f4ee; color: #2d3a2d; }
+  body.forest h1, body.forest h2, body.forest h3 { color: #3d5c3d; border-color: #d4e0d0; }
+  body.forest h4 { color: #6a8a60; }
+  body.forest p, body.forest li { color: #354535; }
+  body.forest strong { color: #1a2e1a; }
+  body.forest hr { border-color: #d4e0d0; }
+  body.forest code { background: #e2ebe0; color: #3d5c3d; }
+  body.forest pre { background: #e2ebe0; border-color: #cdd9c8; }
+  body.forest pre code { color: #354535; }
+  body.forest blockquote { border-color: #a8c4a0; color: #6a8a60; }
+  body.forest table { color: #354535; }
+  body.forest th, body.forest td { border-color: #d4e0d0; }
+  body.forest th { background: #e2ebe0; }
+  body.forest tr:nth-child(even) td { background: #f0f4ee; }
+  body.forest .toc a:hover { color: #3d5c3d; }
+  body.forest .toc a.active { color: #1a2e1a; }
+  body.forest .toolbar { background: rgba(240,244,238,0.85); box-shadow: 0 1px 4px rgba(45,58,45,0.08), 0 0 0 0.5px rgba(45,58,45,0.06); }
+  body.forest .toolbar button { color: #88a880; }
+  body.forest .toolbar button:hover { background: rgba(45,58,45,0.06); }
+  body.forest .toolbar .divider { background: rgba(45,58,45,0.08); }
+  body.forest .toolbar .search-input { background: rgba(255,255,255,0.5); border-color: #d4e0d0; color: #2d3a2d; }
+  body.forest .copy-btn { background: rgba(45,58,45,0.06); color: #88a880; }
+  body.forest .copy-btn:hover { background: rgba(45,58,45,0.1); }
+  body.forest mark.highlight { background: #c4e0a8; }
+  body.forest .toolbar button.active-theme { background: rgba(45,58,45,0.1); color: #3d5c3d; }
+  body.forest .replace-row .replace-btn { border-color: #d4e0d0; color: #88a880; }
+
   /* TOC sidebar */
   .toc {
     position: fixed;
@@ -419,6 +503,11 @@ function buildHtml(mdContent, title) {
       <button onclick="setTheme('dark')" id="themeDark">Dark</button>
       <button onclick="setTheme('space')" id="themeSpace">Space</button>
     </div>
+    <div class="row">
+      <button onclick="setTheme('spring')" id="themeSpring">Spring</button>
+      <button onclick="setTheme('nugget')" id="themeNugget">Nugget</button>
+      <button onclick="setTheme('forest')" id="themeForest">Forest</button>
+    </div>
     <div class="divider"></div>
     <div class="row-label">Download</div>
     <div class="row">
@@ -462,7 +551,7 @@ function buildHtml(mdContent, title) {
     // Theme
     function setTheme(t) {
       document.body.className = t === 'light' ? '' : t;
-      document.querySelectorAll('#themeLight,#themeDark,#themeSpace').forEach(function(b) {
+      document.querySelectorAll('#themeLight,#themeDark,#themeSpace,#themeSpring,#themeNugget,#themeForest').forEach(function(b) {
         b.classList.remove('active-theme');
       });
       document.getElementById('theme' + t.charAt(0).toUpperCase() + t.slice(1)).classList.add('active-theme');
@@ -619,15 +708,29 @@ function convert(inputPath, outDir) {
   openBrowser(htmlPath);
   console.log(htmlPath);
 
-  // 임시 파일이면 브라우저 로딩 후 삭제
-  if (outDir.startsWith(os.tmpdir())) {
-    setTimeout(() => {
-      fs.rmSync(outDir, { recursive: true, force: true });
-    }, 86400000);
-  }
+}
+
+// 하루 이상 지난 mdviewer 임시 디렉토리 정리
+function cleanOldTempDirs() {
+  const tmpBase = os.tmpdir();
+  const now = Date.now();
+  const oneDay = 86400000;
+  try {
+    for (const name of fs.readdirSync(tmpBase)) {
+      if (!name.startsWith("mdviewer-")) continue;
+      const dirPath = path.join(tmpBase, name);
+      try {
+        const stat = fs.statSync(dirPath);
+        if (stat.isDirectory() && now - stat.mtimeMs > oneDay) {
+          fs.rmSync(dirPath, { recursive: true, force: true });
+        }
+      } catch {}
+    }
+  } catch {}
 }
 
 // --- CLI ---
+cleanOldTempDirs();
 const args = process.argv.slice(2);
 
 if (args.length === 0 || args.includes("--help") || args.includes("-h")) {
