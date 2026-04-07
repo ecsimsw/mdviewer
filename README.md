@@ -2,8 +2,6 @@
 
 Minimal Markdown viewer. Converts `.md` files to styled HTML and opens them in your browser.
 
-![screenshot](img/img.png)
-
 ## Features
 
 - 9 themes — Light, Dark, Space, Spring, Nugget, Forest, Sky, Wine, Lemon
