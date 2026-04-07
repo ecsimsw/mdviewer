@@ -29,6 +29,7 @@ const CSS = `
     max-width: 780px;
     margin: 0 auto;
     padding: 72px 24px 96px;
+    overflow: hidden;
   }
   article img {
     max-width: 100%;
