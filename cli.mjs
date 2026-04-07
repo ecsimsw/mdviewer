@@ -30,6 +30,10 @@ const CSS = `
     margin: 0 auto;
     padding: 72px 24px 96px;
   }
+  article img {
+    max-width: 100%;
+    height: auto;
+  }
 
   article > :first-child { margin-top: 0; }
 
@@ -463,7 +467,7 @@ const CSS = `
   @page { margin: 1.5cm; size: A4; }
 `;
 
-function buildHtml(mdContent, title) {
+function buildHtml(mdContent, title, rawMdOriginal) {
   const body = marked(mdContent);
   return `<!DOCTYPE html>
 <html lang="ko">
@@ -517,6 +521,7 @@ function buildHtml(mdContent, title) {
     </div>
   </div>
   <article id="content">${body}</article>
+  <script id="rawMd" type="text/plain">${rawMdOriginal.replace(/<\/script>/g, '<\\/script>')}</script>
   <script>
     // Layout
     let scale = 100;
@@ -656,7 +661,8 @@ function buildHtml(mdContent, title) {
 
     // Download MD
     function downloadMd() {
-      downloadFile(content.innerText, document.title + '.md', 'text/markdown');
+      var raw = document.getElementById('rawMd').textContent;
+      downloadFile(raw, document.title + '.md', 'text/markdown');
     }
 
     // Download TXT
@@ -701,7 +707,7 @@ function convert(inputPath, outDir) {
     return `![${alt}](file://${absPath})`;
   });
 
-  const html = buildHtml(md, baseName);
+  const html = buildHtml(md, baseName, rawMd);
   const htmlPath = path.join(outDir, `${baseName}.html`);
   fs.writeFileSync(htmlPath, html);
 

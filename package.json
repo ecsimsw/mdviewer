@@ -1,6 +1,6 @@
 {
   "name": "@ecsimsw/mdviewer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Markdown to styled HTML viewer. Opens in browser with zoom controls and PDF export.",
   "type": "module",
   "bin": {
