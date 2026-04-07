@@ -71,6 +71,9 @@ const CSS = `
 
   body.dark p, body.dark li { color: #ccc; }
 
+  a { color: inherit; }
+  a:visited { color: inherit; }
+
   hr {
     border: none; border-top: 1px solid #eee; margin: 40px 0;
   }
@@ -191,30 +194,30 @@ const CSS = `
   body.space mark.highlight { background: #2a4a2e; }
 
   /* Spring theme */
-  body.spring { background: #fdf2f4; color: #5c3d4a; }
-  body.spring h1, body.spring h2, body.spring h3 { color: #8b3a62; border-color: #f0d4de; }
-  body.spring h4 { color: #a06b82; }
-  body.spring p, body.spring li { color: #5c3d4a; }
-  body.spring strong { color: #6b2248; }
-  body.spring hr { border-color: #f0d4de; }
-  body.spring code { background: #f9e4ea; color: #7a3d5c; }
-  body.spring pre { background: #f9e4ea; border-color: #f0d4de; }
-  body.spring pre code { color: #5c3d4a; }
-  body.spring blockquote { border-color: #e8b4c8; color: #a06b82; }
-  body.spring table { color: #5c3d4a; }
-  body.spring th, body.spring td { border-color: #f0d4de; }
-  body.spring th { background: #f9e4ea; }
-  body.spring tr:nth-child(even) td { background: #fdf2f4; }
-  body.spring .toc a:hover { color: #8b3a62; }
-  body.spring .toc a.active { color: #6b2248; }
-  body.spring .toolbar { background: rgba(253,242,244,0.85); box-shadow: 0 1px 4px rgba(139,58,98,0.08), 0 0 0 0.5px rgba(139,58,98,0.06); }
-  body.spring .toolbar button { color: #b08898; }
-  body.spring .toolbar button:hover { background: rgba(139,58,98,0.06); }
-  body.spring .toolbar .divider { background: rgba(139,58,98,0.08); }
-  body.spring .toolbar .search-input { background: rgba(255,255,255,0.5); border-color: #f0d4de; color: #5c3d4a; }
-  body.spring .copy-btn { background: rgba(139,58,98,0.06); color: #b08898; }
-  body.spring .copy-btn:hover { background: rgba(139,58,98,0.1); }
-  body.spring mark.highlight { background: #f5c6d8; }
+  body.spring { background: #fef8f9; color: #6b4d58; }
+  body.spring h1, body.spring h2, body.spring h3 { color: #a8567a; border-color: #f5e0e8; }
+  body.spring h4 { color: #b88898; }
+  body.spring p, body.spring li { color: #6b4d58; }
+  body.spring strong { color: #7a3058; }
+  body.spring hr { border-color: #f5e0e8; }
+  body.spring code { background: #fceef2; color: #8a5068; }
+  body.spring pre { background: #fceef2; border-color: #f5e0e8; }
+  body.spring pre code { color: #6b4d58; }
+  body.spring blockquote { border-color: #f0c8d8; color: #b88898; }
+  body.spring table { color: #6b4d58; }
+  body.spring th, body.spring td { border-color: #f5e0e8; }
+  body.spring th { background: #fceef2; }
+  body.spring tr:nth-child(even) td { background: #fef8f9; }
+  body.spring .toc a:hover { color: #a8567a; }
+  body.spring .toc a.active { color: #7a3058; }
+  body.spring .toolbar { background: rgba(254,248,249,0.85); box-shadow: 0 1px 4px rgba(168,86,122,0.06), 0 0 0 0.5px rgba(168,86,122,0.04); }
+  body.spring .toolbar button { color: #c8a0b0; }
+  body.spring .toolbar button:hover { background: rgba(168,86,122,0.05); }
+  body.spring .toolbar .divider { background: rgba(168,86,122,0.06); }
+  body.spring .toolbar .search-input { background: rgba(255,255,255,0.6); border-color: #f5e0e8; color: #6b4d58; }
+  body.spring .copy-btn { background: rgba(168,86,122,0.05); color: #c8a0b0; }
+  body.spring .copy-btn:hover { background: rgba(168,86,122,0.08); }
+  body.spring mark.highlight { background: #f8d4e2; }
   body.spring .toolbar button.active-theme { background: rgba(139,58,98,0.1); color: #8b3a62; }
   body.spring .replace-row .replace-btn { border-color: #f0d4de; color: #b08898; }
 
@@ -303,32 +306,32 @@ const CSS = `
   body.sky .replace-row .replace-btn { border-color: #d4e6f1; color: #85c1e9; }
 
   /* Wine theme */
-  body.wine { background: #1a1018; color: #d4c4cf; }
-  body.wine h1, body.wine h2, body.wine h3 { color: #c2667a; border-color: #2e1e28; }
-  body.wine h4 { color: #9a7080; }
-  body.wine p, body.wine li { color: #c4b0ba; }
-  body.wine strong { color: #e8d8e0; }
-  body.wine hr { border-color: #2e1e28; }
-  body.wine code { background: #251a22; color: #d4c4cf; }
-  body.wine pre { background: #251a22; border-color: #2e1e28; }
-  body.wine pre code { color: #c4b0ba; }
-  body.wine blockquote { border-color: #3d2a35; color: #9a7080; }
-  body.wine table { color: #c4b0ba; }
-  body.wine th, body.wine td { border-color: #2e1e28; }
-  body.wine th { background: #251a22; }
-  body.wine tr:nth-child(even) td { background: #1a1018; }
-  body.wine .toc a:hover { color: #d4c4cf; }
-  body.wine .toc a.active { color: #c2667a; }
-  body.wine .toolbar { background: rgba(37,26,34,0.85); box-shadow: 0 1px 4px rgba(0,0,0,0.4), 0 0 0 0.5px rgba(255,255,255,0.04); }
-  body.wine .toolbar button { color: #9a7080; }
+  body.wine { background: #200a10; color: #d4b8c0; }
+  body.wine h1, body.wine h2, body.wine h3 { color: #e05070; border-color: #3a1520; }
+  body.wine h4 { color: #b06070; }
+  body.wine p, body.wine li { color: #c8a0aa; }
+  body.wine strong { color: #f0d0d8; }
+  body.wine hr { border-color: #3a1520; }
+  body.wine code { background: #2e0e18; color: #d4b8c0; }
+  body.wine pre { background: #2e0e18; border-color: #3a1520; }
+  body.wine pre code { color: #c8a0aa; }
+  body.wine blockquote { border-color: #4a2030; color: #b06070; }
+  body.wine table { color: #c8a0aa; }
+  body.wine th, body.wine td { border-color: #3a1520; }
+  body.wine th { background: #2e0e18; }
+  body.wine tr:nth-child(even) td { background: #200a10; }
+  body.wine .toc a:hover { color: #d4b8c0; }
+  body.wine .toc a.active { color: #e05070; }
+  body.wine .toolbar { background: rgba(46,14,24,0.85); box-shadow: 0 1px 4px rgba(0,0,0,0.4), 0 0 0 0.5px rgba(255,255,255,0.04); }
+  body.wine .toolbar button { color: #b06070; }
   body.wine .toolbar button:hover { background: rgba(255,255,255,0.06); }
   body.wine .toolbar .divider { background: rgba(255,255,255,0.06); }
-  body.wine .toolbar .search-input { background: rgba(0,0,0,0.3); border-color: #3d2a35; color: #d4c4cf; }
-  body.wine .copy-btn { background: rgba(255,255,255,0.08); color: #9a7080; }
+  body.wine .toolbar .search-input { background: rgba(0,0,0,0.3); border-color: #4a2030; color: #d4b8c0; }
+  body.wine .copy-btn { background: rgba(255,255,255,0.08); color: #b06070; }
   body.wine .copy-btn:hover { background: rgba(255,255,255,0.12); }
-  body.wine mark.highlight { background: #4a2a38; }
-  body.wine .toolbar button.active-theme { background: rgba(194,102,122,0.15); color: #c2667a; }
-  body.wine .replace-row .replace-btn { border-color: #3d2a35; color: #9a7080; }
+  body.wine mark.highlight { background: #5a1828; }
+  body.wine .toolbar button.active-theme { background: rgba(224,80,112,0.15); color: #e05070; }
+  body.wine .replace-row .replace-btn { border-color: #4a2030; color: #b06070; }
 
   /* Lemon theme */
   body.lemon { background: #fdfcf0; color: #3d3a2e; }
@@ -357,6 +360,90 @@ const CSS = `
   body.lemon mark.highlight { background: #e8e0a0; }
   body.lemon .toolbar button.active-theme { background: rgba(61,58,46,0.1); color: #8a7d2a; }
   body.lemon .replace-row .replace-btn { border-color: #e8e4c8; color: #b8b080; }
+
+  /* Grimace theme */
+  body.grimace { background: #f5f0fa; color: #3a2d4a; }
+  body.grimace h1, body.grimace h2, body.grimace h3 { color: #6b3fa0; border-color: #e0d4f0; }
+  body.grimace h4 { color: #8a6ab8; }
+  body.grimace p, body.grimace li { color: #4a3860; }
+  body.grimace strong { color: #2e1a48; }
+  body.grimace hr { border-color: #e0d4f0; }
+  body.grimace code { background: #ece4f6; color: #5c3d8a; }
+  body.grimace pre { background: #ece4f6; border-color: #ddd0ee; }
+  body.grimace pre code { color: #4a3860; }
+  body.grimace blockquote { border-color: #c4a8e0; color: #8a6ab8; }
+  body.grimace table { color: #4a3860; }
+  body.grimace th, body.grimace td { border-color: #e0d4f0; }
+  body.grimace th { background: #ece4f6; }
+  body.grimace tr:nth-child(even) td { background: #f5f0fa; }
+  body.grimace .toc a:hover { color: #6b3fa0; }
+  body.grimace .toc a.active { color: #2e1a48; }
+  body.grimace .toolbar { background: rgba(245,240,250,0.85); box-shadow: 0 1px 4px rgba(107,63,160,0.08), 0 0 0 0.5px rgba(107,63,160,0.06); }
+  body.grimace .toolbar button { color: #a890c8; }
+  body.grimace .toolbar button:hover { background: rgba(107,63,160,0.06); }
+  body.grimace .toolbar .divider { background: rgba(107,63,160,0.08); }
+  body.grimace .toolbar .search-input { background: rgba(255,255,255,0.5); border-color: #e0d4f0; color: #3a2d4a; }
+  body.grimace .copy-btn { background: rgba(107,63,160,0.06); color: #a890c8; }
+  body.grimace .copy-btn:hover { background: rgba(107,63,160,0.1); }
+  body.grimace mark.highlight { background: #d4b8f0; }
+  body.grimace .toolbar button.active-theme { background: rgba(107,63,160,0.1); color: #6b3fa0; }
+  body.grimace .replace-row .replace-btn { border-color: #e0d4f0; color: #a890c8; }
+
+  /* Mocha theme */
+  body.mocha { background: #1c1410; color: #d4c4b0; }
+  body.mocha h1, body.mocha h2, body.mocha h3 { color: #c8956a; border-color: #302018; }
+  body.mocha h4 { color: #a08060; }
+  body.mocha p, body.mocha li { color: #c0aa90; }
+  body.mocha strong { color: #e8d8c4; }
+  body.mocha hr { border-color: #302018; }
+  body.mocha code { background: #281c14; color: #d4c4b0; }
+  body.mocha pre { background: #281c14; border-color: #302018; }
+  body.mocha pre code { color: #c0aa90; }
+  body.mocha blockquote { border-color: #443020; color: #a08060; }
+  body.mocha table { color: #c0aa90; }
+  body.mocha th, body.mocha td { border-color: #302018; }
+  body.mocha th { background: #281c14; }
+  body.mocha tr:nth-child(even) td { background: #1c1410; }
+  body.mocha .toc a:hover { color: #d4c4b0; }
+  body.mocha .toc a.active { color: #c8956a; }
+  body.mocha .toolbar { background: rgba(40,28,20,0.85); box-shadow: 0 1px 4px rgba(0,0,0,0.4), 0 0 0 0.5px rgba(255,255,255,0.04); }
+  body.mocha .toolbar button { color: #a08060; }
+  body.mocha .toolbar button:hover { background: rgba(255,255,255,0.06); }
+  body.mocha .toolbar .divider { background: rgba(255,255,255,0.06); }
+  body.mocha .toolbar .search-input { background: rgba(0,0,0,0.3); border-color: #443020; color: #d4c4b0; }
+  body.mocha .copy-btn { background: rgba(255,255,255,0.08); color: #a08060; }
+  body.mocha .copy-btn:hover { background: rgba(255,255,255,0.12); }
+  body.mocha mark.highlight { background: #4a3018; }
+  body.mocha .toolbar button.active-theme { background: rgba(200,149,106,0.15); color: #c8956a; }
+  body.mocha .replace-row .replace-btn { border-color: #443020; color: #a08060; }
+
+  /* Sunset theme */
+  body.sunset { background: #1a1018; color: #e0c8b8; }
+  body.sunset h1, body.sunset h2, body.sunset h3 { color: #e88040; border-color: #302020; }
+  body.sunset h4 { color: #c08060; }
+  body.sunset p, body.sunset li { color: #d0b0a0; }
+  body.sunset strong { color: #f0e0d0; }
+  body.sunset hr { border-color: #302020; }
+  body.sunset code { background: #281810; color: #e0c8b8; }
+  body.sunset pre { background: #281810; border-color: #302020; }
+  body.sunset pre code { color: #d0b0a0; }
+  body.sunset blockquote { border-color: #482818; color: #c08060; }
+  body.sunset table { color: #d0b0a0; }
+  body.sunset th, body.sunset td { border-color: #302020; }
+  body.sunset th { background: #281810; }
+  body.sunset tr:nth-child(even) td { background: #1a1018; }
+  body.sunset .toc a:hover { color: #e0c8b8; }
+  body.sunset .toc a.active { color: #e88040; }
+  body.sunset .toolbar { background: rgba(40,24,16,0.85); box-shadow: 0 1px 4px rgba(0,0,0,0.4), 0 0 0 0.5px rgba(255,255,255,0.04); }
+  body.sunset .toolbar button { color: #c08060; }
+  body.sunset .toolbar button:hover { background: rgba(255,255,255,0.06); }
+  body.sunset .toolbar .divider { background: rgba(255,255,255,0.06); }
+  body.sunset .toolbar .search-input { background: rgba(0,0,0,0.3); border-color: #482818; color: #e0c8b8; }
+  body.sunset .copy-btn { background: rgba(255,255,255,0.08); color: #c08060; }
+  body.sunset .copy-btn:hover { background: rgba(255,255,255,0.12); }
+  body.sunset mark.highlight { background: #583010; }
+  body.sunset .toolbar button.active-theme { background: rgba(232,128,64,0.15); color: #e88040; }
+  body.sunset .replace-row .replace-btn { border-color: #482818; color: #c08060; }
 
   /* TOC sidebar */
   .toc {
@@ -607,8 +694,8 @@ function buildHtml(mdContent, title) {
     <div class="divider"></div>
     <div class="row-label">Theme</div>
     <div class="row">
-      <button onclick="setTheme('light')" id="themeLight" class="active-theme">Light</button>
-      <button onclick="setTheme('dark')" id="themeDark">Dark</button>
+      <button onclick="setTheme('light')" id="themeLight" class="active-theme">Milk</button>
+      <button onclick="setTheme('dark')" id="themeDark">Night</button>
       <button onclick="setTheme('space')" id="themeSpace">Space</button>
     </div>
     <div class="row">
@@ -617,9 +704,14 @@ function buildHtml(mdContent, title) {
       <button onclick="setTheme('forest')" id="themeForest">Forest</button>
     </div>
     <div class="row">
-      <button onclick="setTheme('sky')" id="themeSky">Sky</button>
-      <button onclick="setTheme('wine')" id="themeWine">Wine</button>
+      <button onclick="setTheme('sky')" id="themeSky">Ocean</button>
+      <button onclick="setTheme('grimace')" id="themeGrimace">Grape</button>
       <button onclick="setTheme('lemon')" id="themeLemon">Lemon</button>
+    </div>
+    <div class="row">
+      <button onclick="setTheme('wine')" id="themeWine">Wine</button>
+      <button onclick="setTheme('sunset')" id="themeSunset">Sunset</button>
+      <button onclick="setTheme('mocha')" id="themeMocha">Mocha</button>
     </div>
   </div>
   <article id="content">${body}</article>
@@ -689,7 +781,7 @@ function buildHtml(mdContent, title) {
     // Theme
     function setTheme(t) {
       document.body.className = t === 'light' ? '' : t;
-      document.querySelectorAll('#themeLight,#themeDark,#themeSpace,#themeSpring,#themeNugget,#themeForest,#themeSky,#themeWine,#themeLemon').forEach(function(b) {
+      document.querySelectorAll('#themeLight,#themeDark,#themeSpace,#themeSpring,#themeNugget,#themeForest,#themeSky,#themeWine,#themeLemon,#themeGrimace,#themeMocha,#themeSunset').forEach(function(b) {
         b.classList.remove('active-theme');
       });
       document.getElementById('theme' + t.charAt(0).toUpperCase() + t.slice(1)).classList.add('active-theme');

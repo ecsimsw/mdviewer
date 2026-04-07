@@ -1,24 +1,25 @@
 # mdviewer
 
 Minimal Markdown viewer. Converts `.md` files to styled HTML and opens them in your browser.
+Made by [ecsimsw](https://github.com/ecsimsw)
 
 ## Features
 
-- 9 themes — Light, Dark, Space, Spring, Nugget, Forest, Sky, Wine, Lemon
-- Zoom controls (50%–200%)
-- Width / Margin adjustment
+- 12 themes 
+  - Milk, Night, Space, Spring, Nugget, Forest, Ocean, Grape, Lemon, Wine, Sunset, Mocha
+- Zoom controls
+- Width, Margin adjustment
 - Search & Replace
-- Edit mode (inline content editing)
+- Edit mode
 - Code block copy button
-- Table of Contents sidebar (auto-detected from headings)
+- Table of Contents sidebar
 - PDF / TXT download
-- Relative image path support (`file://` conversion)
-- Temp file auto-cleanup
+- Temp file auto-cleanup after 24h
 
 ## Stack
 
 - **Node.js** >= 18
-- **[marked](https://github.com/markedjs/marked)** — Markdown to HTML parser
+- **[Marked](https://github.com/markedjs/marked)** — Markdown to HTML parser
 - **[Pretendard](https://github.com/orioncactus/pretendard)** — Web font (CDN)
 - **AppleScript + osacompile** — macOS `.app` bundle
 - **Homebrew Cask** — macOS distribution
@@ -61,6 +62,14 @@ brew install --cask mdviewer
 ```
 
 After installation, double-click any `.md` file to open it with MarkdownViewer.
+
+## Preview Milk
+
+![screenshot](img/img.png)
+
+## Preview Sunset
+
+![screenshot](img/img_1.png)
 
 ## License
 
